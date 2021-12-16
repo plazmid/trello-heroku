@@ -1,3 +1,4 @@
+<?php
 /* Здесь собрано все знания по php, js, html, ajax. 
  * Основной trello-clone и app на js был написан мной ранее
  * по web-интенсиву на js. Данные json сохранялись в Local Storage
@@ -5,10 +6,8 @@
  * Задача дополнить приложение php скриптом, для пользования ресурсом 
  * удаленно и возможность создание аккаунта для нескольких пользователей.
  * Трудности возникли в передаче данных AJAX: 
-		application.js; json-check.php; log-check.php;
- 
+		application.js; json-check.php; log-check.php; 
  */
-<?php
 declare(strict_types=1);
 session_start(); //Стартуем session and add cookes [PHPSESSID]
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
