@@ -53,7 +53,7 @@ else{
 			<div class='container_form'>
 			<span class='hfont'>ВХОД</span>
 <span style='display:block; color:red; font-size:13px;'>Пароль неверный!</span>
-				<form action='./web/config/log-check.php' method='POST'>
+				<form action='log-check.php' method='POST'>
 					<input type='email' name='email' placeholder='Введите электронную почту' required>
 					<input id='password' type='password' name='password' placeholder='Введите пароль' required>
 					<button type='submit' >Войти</button>
@@ -83,7 +83,7 @@ catch (Exception $er){
 			<div class='container_form'>
 			<span class='hfont'>ВХОД</span>
 <span style='display:block; color:red; font-size:13px;'> {$er->getMessage()} </span>
-				<form action='./log-check.php' method='POST'>
+				<form action='log-check.php' method='POST'>
 					<input type='email' name='email' placeholder='Введите электронную почту' required>
 					<input id='password' type='password' name='password' placeholder='Введите пароль' required>
 					<button type='submit' >Войти</button>

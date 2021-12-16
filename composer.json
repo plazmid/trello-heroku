@@ -1,10 +1,6 @@
 {
   "require" : {
-<<<<<<< HEAD
-    "monolog/monolog": "^1.22"    
-=======
     "monolog/monolog": "^1.22"
->>>>>>> 67dc97147206dab4d45beee622dc7d63ef630deb
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"

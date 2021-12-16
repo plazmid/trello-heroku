@@ -12,7 +12,7 @@ let i = 5;
 		i--;
 	}
 	const request = new XMLHttpRequest();
-	request.open("GET", "./web/config/user-check.php?" + usWrite);
+	request.open("GET", "../config/user-check.php?" + usWrite);
 	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	request.addEventListener("readystatechange", () => {
 		if (request.readyState === 4 && request.status === 200){
