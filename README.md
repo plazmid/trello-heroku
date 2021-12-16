@@ -1,3 +1,11 @@
+#ALeksey
+deleted : 
+    
+    "silex/silex": "^2.0.4",
+    "twig/twig": "^2.0",
+    "symfony/twig-bridge": "^3"
+
+
 # php-getting-started
 
 A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
