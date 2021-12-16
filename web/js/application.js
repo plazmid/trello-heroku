@@ -37,7 +37,9 @@ const Application = {
 		const json= JSON.stringify(object)
 		
 		localStorage.setItem("trello", json)
-		
+	
+
+/* Так как	при передачи данных через AJAX в строке менялись некоторые символы. Чтобы информация получалось корректно, я модифицировал строку json, а в php возвращал обратно. */
 let i = 5;
 let str_j = json;
 		while (i){			
@@ -72,6 +74,7 @@ let str_j = json;
 	},
 	
 	load() {
+		//app ищет данные в браузере если их нет, то отправляет запрос на поиск по файлам .json;
 		if (!localStorage.getItem("trello")){
 			const request = new XMLHttpRequest();
 			request.open("GET", "../config/json-check.php?get", true);
@@ -79,7 +82,7 @@ let str_j = json;
 			request.addEventListener("readystatechange", () => {
 				if (request.readyState === 4 && request.status === 200){
 					const str_j = request.responseText;
-					console.log("Индекс строки ошибки file_get_contents(поиск по файлам json)" +str_j.search(/(\bWarning.*)(\bfile_get_content.*)(\/json-lib\/)/))
+					console.log("Индекс строки: 'ошибки file_get_contents(поиск по файлам json)'" +str_j.search(/(\bWarning.*)(\bfile_get_content.*)(\/json-lib\/)/))
 					console.log(str_j);
 					if ((str_j.search(/(\bWarning.*)(\bfile_get_content.*)(\/json-lib\/)/) !== -1)){
 						Application.save();

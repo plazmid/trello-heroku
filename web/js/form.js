@@ -1,3 +1,4 @@
+
 document.querySelectorAll('input')[1].addEventListener("blur", checkUserLogo);
 
 function checkUserLogo(even){
