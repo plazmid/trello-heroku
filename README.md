@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 #ALeksey
 deleted : 
     
+=======
+#Aleksey
+Removing:
+
+>>>>>>> 67dc97147206dab4d45beee622dc7d63ef630deb
     "silex/silex": "^2.0.4",
     "twig/twig": "^2.0",
     "symfony/twig-bridge": "^3"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 67dc97147206dab4d45beee622dc7d63ef630deb
 # php-getting-started
 
 A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
